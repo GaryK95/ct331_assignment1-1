@@ -21,5 +21,30 @@ void runTests(){
   traverse(l);
   printf("\n");
 
+  //Number of elemnts in linked list
+  int x = length(l);
+  printf("number of elements in a linked list: %d\n", x);
+  printf("\n");
+
+  push(&l, "A", 30);
+  traverse(l);
+  printf("\n");
+
+
+  pop(&l);
+  traverse(l);
+  printf("\n");
+
+
+  enqueue(&l, "Z", 30);
+  traverse(l);
+  printf("\n");
+
+  dequeue(&*l);
+  traverse(l);
+  printf("\n");
+
+
+
   printf("\nTests complete.\n");
 }
